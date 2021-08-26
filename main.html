@@ -3,124 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Litter Hotspots</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 12px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myUL {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  display: block
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee;
-}
-</style>
-</head>
-
-<body>
-
-    <h2>Welcome</h2>
-
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
-      </div>
-
-      <h2>Search for Litter Hotspots:</h2>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter name..">
-
-      <ul id="myUL">
-        <li><a href="#">Beaver Marsh Preserve</a></li>
-        <li><a href="#">Beechwood Cemetery Perimeter</a></li>
-        <li><a href="#">Birchwood 3105 Hursey Street</a></li>
-        <li><a href="#">Burton Park on Sima Street</a></li>
-        <li><a href="#">East Durham Park</a></li>
-        <li><a href="#">East End 1200 North Alston Avenue</a></li>
-        <li><a href="#">Elizabeth Street</a></li>
-        <li><a href="#">Ellerbe Creek Cleanup</a></li>
-        <li><a href="#">Elmira Avenue Park</a></li>
-        <li><a href="#">Forest Hill Heights</a></li>
-        <li><a href="#">Forest Hills Park</a></li>
-        <li><a href="#">Hillside 1301 South Roxboro Street</a></li>
-        <li><a href="#">Holloway and Guthrie</a></li>
-        <li><a href="#">Indian Trail 1701 Albany Street</a></li>
-        <li><a href="#">Long Meadow Park</a></li>
-        <li><a href="#">Lyon Park</a></li>
-        <li><a href="#">Maplewood Cemetery</a></li>
-        <li><a href="#">Morehead and Blackwell Street</a></li>
-        <li><a href="#">Piney Wood Park</a></li>
-        <li><a href="#">Ramseur Street</a></li>
-        <li><a href="#">Rock Quarry 701 Stadium Drive</a></li>
-        <li><a href="#">Rockwood 2310 Whitley Drive</a></li>
-        <li><a href="#">Sherwood Park</a></li>
-        <li><a href="#">Solite Park</a></li>
-        <li><a href="#">Southside Neighborhood Cleanup Area</a></li>
-        <li><a href="#">Third Fork Creek Trail</a></li>
-        <li><a href="#">Todd Street</a></li>
-        <li><a href="#">Whipporwill Park</a></li>
-      </ul>
-
-      <script>
-        function myFunction() {
-          // Declare variables
-          var input, filter, ul, li, a, i, txtValue;
-          input = document.getElementById('myInput');
-          filter = input.value.toUpperCase();
-          ul = document.getElementById("myUL");
-          li = ul.getElementsByTagName('li');
-        
-          // Loop through all list items, and hide those who don't match the search query
-          for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              li[i].style.display = "";
-            } else {
-              li[i].style.display = "none";
-            }
-          }
-        }
-        </script>
-</body>
-
-<body>
-<<<<<<< HEAD
-      <script>
-          <!DOCTYPE html>
-<head>    
-=======
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
@@ -135,61 +18,11 @@
     <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <style>#map_000c612029c34c3e9178e7a236cd6694 {
         position: relative;
-<<<<<<< HEAD
-        width: 100.0%;
-        height: 100.0%;
-        left: 0.0%;
-        top: 0.0%;
-        }
-    </style>
-</head>
-<body>    
-    
-    <div class="folium-map" id="map_000c612029c34c3e9178e7a236cd6694" ></div>
-</body>
-<script>    
-    
-    
-        var bounds = null;
-    
-
-    var map_000c612029c34c3e9178e7a236cd6694 = L.map(
-        'map_000c612029c34c3e9178e7a236cd6694', {
-        center: [36.018199, -78.920564],
-        zoom: 10,
-        maxBounds: bounds,
-        layers: [],
-        worldCopyJump: false,
-        crs: L.CRS.EPSG3857,
-        zoomControl: true,
-        });
-
-
-    
-    var tile_layer_50ccd9b97cac4cdf9b9d500ea96bb87d = L.tileLayer(
-        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        {
-        "attribution": null,
-        "detectRetina": false,
-        "maxNativeZoom": 18,
-        "maxZoom": 18,
-        "minZoom": 0,
-        "noWrap": false,
-        "opacity": 1,
-        "subdomains": "abc",
-        "tms": false
-}).addTo(map_000c612029c34c3e9178e7a236cd6694);
-    
-=======
         width: 50.0%;
         height: 50.0%;
         left: 0.0%;
@@ -200,8 +33,6 @@
 </head>
 
 <body>
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -248,49 +79,10 @@
                 "tms": false
             }).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_dd606cbf067c4b39ae2f48299dd8eee2 = L.marker(
             [36.052757, -78.897381],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_e3049b19cab947949543c9d3ee76a979 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_dd606cbf067c4b39ae2f48299dd8eee2.setIcon(icon_e3049b19cab947949543c9d3ee76a979);
-            
-    
-            var popup_eb7d9ce4fa0a4edba1991c1727cfa870 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_efce970e31244913ad42204ab80a9439 = $(`<div id="html_efce970e31244913ad42204ab80a9439" style="width: 100.0%; height: 100.0%;">Todd Street</div>`)[0];
-                popup_eb7d9ce4fa0a4edba1991c1727cfa870.setContent(html_efce970e31244913ad42204ab80a9439);
-            
-
-            marker_dd606cbf067c4b39ae2f48299dd8eee2.bindPopup(popup_eb7d9ce4fa0a4edba1991c1727cfa870)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -321,49 +113,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_a6fab7519280450096d852fd34f87eb3 = L.marker(
             [35.991665, -78.891237],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_6d33cc4fbfef475dba88c7bef6796034 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'red',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_a6fab7519280450096d852fd34f87eb3.setIcon(icon_6d33cc4fbfef475dba88c7bef6796034);
-            
-    
-            var popup_24b6514cc26f4853a0cb9f31d7265d7c = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_af951011dec048c299821306da79c848 = $(`<div id="html_af951011dec048c299821306da79c848" style="width: 100.0%; height: 100.0%;">Elizabeth Street</div>`)[0];
-                popup_24b6514cc26f4853a0cb9f31d7265d7c.setContent(html_af951011dec048c299821306da79c848);
-            
-
-            marker_a6fab7519280450096d852fd34f87eb3.bindPopup(popup_24b6514cc26f4853a0cb9f31d7265d7c)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -394,49 +147,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_683f49f69a994fb5893374829475dfe9 = L.marker(
             [36.0027921, -78.8719652],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_385dcf13647f4a47a5eded7f4f1a227e = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_683f49f69a994fb5893374829475dfe9.setIcon(icon_385dcf13647f4a47a5eded7f4f1a227e);
-            
-    
-            var popup_60392cb928434b418c535b7ada61f27b = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_f7aac8356d3e4424afe03933670c3735 = $(`<div id="html_f7aac8356d3e4424afe03933670c3735" style="width: 100.0%; height: 100.0%;">Sherwood Park</div>`)[0];
-                popup_60392cb928434b418c535b7ada61f27b.setContent(html_f7aac8356d3e4424afe03933670c3735);
-            
-
-            marker_683f49f69a994fb5893374829475dfe9.bindPopup(popup_60392cb928434b418c535b7ada61f27b)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -467,49 +181,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_b42a8e3e88ea4b3ab780636702de62ad = L.marker(
             [35.9966801, -78.9243152],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_2eaad5bbc81d43d78b6a7355a2e76d66 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_b42a8e3e88ea4b3ab780636702de62ad.setIcon(icon_2eaad5bbc81d43d78b6a7355a2e76d66);
-            
-    
-            var popup_1962fe7d6ada4ca6a4c8adbf3ce0e4ea = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_a03eed83293d439989ed0d043a9c1101 = $(`<div id="html_a03eed83293d439989ed0d043a9c1101" style="width: 100.0%; height: 100.0%;">Maplewood Cemetery</div>`)[0];
-                popup_1962fe7d6ada4ca6a4c8adbf3ce0e4ea.setContent(html_a03eed83293d439989ed0d043a9c1101);
-            
-
-            marker_b42a8e3e88ea4b3ab780636702de62ad.bindPopup(popup_1962fe7d6ada4ca6a4c8adbf3ce0e4ea)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -540,49 +215,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_ac488d22d3614ccb8aca2983ac575c1a = L.marker(
             [35.983635, -78.907397],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_e3bdba4e45ef4be6b331bf3cf87bff3d = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_ac488d22d3614ccb8aca2983ac575c1a.setIcon(icon_e3bdba4e45ef4be6b331bf3cf87bff3d);
-            
-    
-            var popup_ea59379cc75641f1b3f6c3d8924417b3 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_7b56607d5d8c4e6283dbdfea06c8f218 = $(`<div id="html_7b56607d5d8c4e6283dbdfea06c8f218" style="width: 100.0%; height: 100.0%;">Southside Neighborhood Cleanup Area</div>`)[0];
-                popup_ea59379cc75641f1b3f6c3d8924417b3.setContent(html_7b56607d5d8c4e6283dbdfea06c8f218);
-            
-
-            marker_ac488d22d3614ccb8aca2983ac575c1a.bindPopup(popup_ea59379cc75641f1b3f6c3d8924417b3)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -613,49 +249,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_1656ca1072924eae8ec497222f3209da = L.marker(
             [35.93546232327569, -78.90885717261604],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_ba9de0cc5d86443d87f80d5578e5c572 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_1656ca1072924eae8ec497222f3209da.setIcon(icon_ba9de0cc5d86443d87f80d5578e5c572);
-            
-    
-            var popup_f418cbe3125e4f97a1ddae123f84f091 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_84247de467764a8c93542ad89e69e3e1 = $(`<div id="html_84247de467764a8c93542ad89e69e3e1" style="width: 100.0%; height: 100.0%;">Solite Park</div>`)[0];
-                popup_f418cbe3125e4f97a1ddae123f84f091.setContent(html_84247de467764a8c93542ad89e69e3e1);
-            
-
-            marker_1656ca1072924eae8ec497222f3209da.bindPopup(popup_f418cbe3125e4f97a1ddae123f84f091)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -686,49 +283,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_f7e1637c545e4453bce7e9eae2ddbfc8 = L.marker(
             [35.98604369798658, -78.8723985637584],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_429638469d8a4cbea7d7e3cc24ab25ce = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_f7e1637c545e4453bce7e9eae2ddbfc8.setIcon(icon_429638469d8a4cbea7d7e3cc24ab25ce);
-            
-    
-            var popup_74516a253a48416980cd909fcd34b1a7 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_21a6d7187b894a939057ad66281f7f79 = $(`<div id="html_21a6d7187b894a939057ad66281f7f79" style="width: 100.0%; height: 100.0%;">East Durham Park</div>`)[0];
-                popup_74516a253a48416980cd909fcd34b1a7.setContent(html_21a6d7187b894a939057ad66281f7f79);
-            
-
-            marker_f7e1637c545e4453bce7e9eae2ddbfc8.bindPopup(popup_74516a253a48416980cd909fcd34b1a7)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -759,49 +317,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_414971602ed54db894c37d48a0cf5d78 = L.marker(
             [35.988689449999995, -78.90519009288965],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_3726e53bf15f46cf805b9aea460634ed = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_414971602ed54db894c37d48a0cf5d78.setIcon(icon_3726e53bf15f46cf805b9aea460634ed);
-            
-    
-            var popup_5a352db9aee84475b14a6534b8c63ded = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_102c49f0a6fe4e1daaf55fbce5e1030e = $(`<div id="html_102c49f0a6fe4e1daaf55fbce5e1030e" style="width: 100.0%; height: 100.0%;">Forest Hill Heights – Durham Housing Authority Property</div>`)[0];
-                popup_5a352db9aee84475b14a6534b8c63ded.setContent(html_102c49f0a6fe4e1daaf55fbce5e1030e);
-            
-
-            marker_414971602ed54db894c37d48a0cf5d78.bindPopup(popup_5a352db9aee84475b14a6534b8c63ded)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -832,53 +351,12 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_e0f6737a5462466c8a244768bd2a2e8e = L.marker(
             [35.958515, -78.93959],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_2875cb3fd33b43608cd0561aa2e858af = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_e0f6737a5462466c8a244768bd2a2e8e.setIcon(icon_2875cb3fd33b43608cd0561aa2e858af);
-            
-    
-            var popup_369f10f6b1874b97aa6973a0a16fdb0c = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_8c646c4711564919b896cb85fb5a5c83 = $(`<div id="html_8c646c4711564919b896cb85fb5a5c83" style="width: 100.0%; height: 100.0%;">Third Fork Creek Trail</div>`)[0];
-                popup_369f10f6b1874b97aa6973a0a16fdb0c.setContent(html_8c646c4711564919b896cb85fb5a5c83);
-            
-
-            marker_e0f6737a5462466c8a244768bd2a2e8e.bindPopup(popup_369f10f6b1874b97aa6973a0a16fdb0c)
-            ;
-
-            
-        
-    
-=======
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-=======
-            }
-        ).addTo(map_000c612029c34c3e9178e7a236cd6694);
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
 
 
 
@@ -907,49 +385,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_46ad83db72264404aca35637f44a725b = L.marker(
             [35.965291223143836, -78.90474799214643],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_8f8391caba0b45a18821f04956cf42a5 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_46ad83db72264404aca35637f44a725b.setIcon(icon_8f8391caba0b45a18821f04956cf42a5);
-            
-    
-            var popup_6b6f0b8d6d7449329aaa91faf57b8b8a = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_60f240f7960f477f9f78770b3682b838 = $(`<div id="html_60f240f7960f477f9f78770b3682b838" style="width: 100.0%; height: 100.0%;">Elmira Avenue Park</div>`)[0];
-                popup_6b6f0b8d6d7449329aaa91faf57b8b8a.setContent(html_60f240f7960f477f9f78770b3682b838);
-            
-
-            marker_46ad83db72264404aca35637f44a725b.bindPopup(popup_6b6f0b8d6d7449329aaa91faf57b8b8a)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -980,49 +419,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_6d52f81b71254320a542e103895312e7 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_94ce48af9b4c4bbea0c233436469d593 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_6d52f81b71254320a542e103895312e7.setIcon(icon_94ce48af9b4c4bbea0c233436469d593);
-            
-    
-            var popup_aa59882b586643d9836c37401ba252cd = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_b24cc8634d8a4d09880fcdacfbdd7562 = $(`<div id="html_b24cc8634d8a4d09880fcdacfbdd7562" style="width: 100.0%; height: 100.0%;">Birchwood_3105 Hursey St</div>`)[0];
-                popup_aa59882b586643d9836c37401ba252cd.setContent(html_b24cc8634d8a4d09880fcdacfbdd7562);
-            
-
-            marker_6d52f81b71254320a542e103895312e7.bindPopup(popup_aa59882b586643d9836c37401ba252cd)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1053,49 +453,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_3076938cb2ac4f49a569a4a9bf4d2a3a = L.marker(
             [36.01634195, -78.8848847530871],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_31d87bef21284065b7efb040fec474ed = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_3076938cb2ac4f49a569a4a9bf4d2a3a.setIcon(icon_31d87bef21284065b7efb040fec474ed);
-            
-    
-            var popup_81486958e090449f8da015442690dc5b = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_69bd8741e64d43c193fb6ebb331c4f9e = $(`<div id="html_69bd8741e64d43c193fb6ebb331c4f9e" style="width: 100.0%; height: 100.0%;">Beaver Marsh Preserve</div>`)[0];
-                popup_81486958e090449f8da015442690dc5b.setContent(html_69bd8741e64d43c193fb6ebb331c4f9e);
-            
-
-            marker_3076938cb2ac4f49a569a4a9bf4d2a3a.bindPopup(popup_81486958e090449f8da015442690dc5b)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1126,49 +487,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_b93de185c7a44b77b3b1c38914652ec2 = L.marker(
             [35.9946596, -78.87545404833733],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_6b4b840a5daf4ad6a10fc0a7bf355103 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_b93de185c7a44b77b3b1c38914652ec2.setIcon(icon_6b4b840a5daf4ad6a10fc0a7bf355103);
-            
-    
-            var popup_4f9b9a334cf140aaa3e47b855fd338bf = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_1740ec41787c47128304b00dbe9d6cba = $(`<div id="html_1740ec41787c47128304b00dbe9d6cba" style="width: 100.0%; height: 100.0%;">Holloway and Guthrie</div>`)[0];
-                popup_4f9b9a334cf140aaa3e47b855fd338bf.setContent(html_1740ec41787c47128304b00dbe9d6cba);
-            
-
-            marker_b93de185c7a44b77b3b1c38914652ec2.bindPopup(popup_4f9b9a334cf140aaa3e47b855fd338bf)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1199,49 +521,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_0e1fd862d79c4dc8adc8677d251bda54 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_c3d06842b9584339b5864cded59541df = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_0e1fd862d79c4dc8adc8677d251bda54.setIcon(icon_c3d06842b9584339b5864cded59541df);
-            
-    
-            var popup_9182a0b304f2406f915a7b658f5d58e3 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_28b60ae7c9784c02a2c5c2849a215d15 = $(`<div id="html_28b60ae7c9784c02a2c5c2849a215d15" style="width: 100.0%; height: 100.0%;">Burton_1100 Sima St</div>`)[0];
-                popup_9182a0b304f2406f915a7b658f5d58e3.setContent(html_28b60ae7c9784c02a2c5c2849a215d15);
-            
-
-            marker_0e1fd862d79c4dc8adc8677d251bda54.bindPopup(popup_9182a0b304f2406f915a7b658f5d58e3)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1272,49 +555,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_a9c6c04a6b2d4484a61faf94969e833d = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_91c19a1c46e644fba652154c77463e37 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_a9c6c04a6b2d4484a61faf94969e833d.setIcon(icon_91c19a1c46e644fba652154c77463e37);
-            
-    
-            var popup_a520ca6ace5b4851920f74716992f968 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_4b819e7c6dcc4ddfa49ac28038a247f1 = $(`<div id="html_4b819e7c6dcc4ddfa49ac28038a247f1" style="width: 100.0%; height: 100.0%;">East Durham_2500 E Main St</div>`)[0];
-                popup_a520ca6ace5b4851920f74716992f968.setContent(html_4b819e7c6dcc4ddfa49ac28038a247f1);
-            
-
-            marker_a9c6c04a6b2d4484a61faf94969e833d.bindPopup(popup_a520ca6ace5b4851920f74716992f968)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1345,49 +589,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_951e9ccf8d7f4477afd6b71d40d034b3 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_8c12f57a0fa04f5b8d9641ea13da3de9 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_951e9ccf8d7f4477afd6b71d40d034b3.setIcon(icon_8c12f57a0fa04f5b8d9641ea13da3de9);
-            
-    
-            var popup_53618380e12d4ba9b1898603eff284f4 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_e152735ede72432b94e638a7c41d8c57 = $(`<div id="html_e152735ede72432b94e638a7c41d8c57" style="width: 100.0%; height: 100.0%;">ponyseaurous</div>`)[0];
-                popup_53618380e12d4ba9b1898603eff284f4.setContent(html_e152735ede72432b94e638a7c41d8c57);
-            
-
-            marker_951e9ccf8d7f4477afd6b71d40d034b3.bindPopup(popup_53618380e12d4ba9b1898603eff284f4)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1418,49 +623,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_742e8899513c4696bc9ae389d58859d1 = L.marker(
             [35.98643, -78.919367],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_5f7eb4e34e9d47c79fb1b10a95b54f5a = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_742e8899513c4696bc9ae389d58859d1.setIcon(icon_5f7eb4e34e9d47c79fb1b10a95b54f5a);
-            
-    
-            var popup_81f4c7be4b6c4c59915d5a612a99179f = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_22458e6913bd42658587fc23c29c54ed = $(`<div id="html_22458e6913bd42658587fc23c29c54ed" style="width: 100.0%; height: 100.0%;">Lyon Park</div>`)[0];
-                popup_81f4c7be4b6c4c59915d5a612a99179f.setContent(html_22458e6913bd42658587fc23c29c54ed);
-            
-
-            marker_742e8899513c4696bc9ae389d58859d1.bindPopup(popup_81f4c7be4b6c4c59915d5a612a99179f)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1491,53 +657,12 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_bbb3c5d4718a4839b5182e36541c558c = L.marker(
             [36.0473749, -78.9237371],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_cfb1175a9f04447e81ef8557f94a0d8e = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_bbb3c5d4718a4839b5182e36541c558c.setIcon(icon_cfb1175a9f04447e81ef8557f94a0d8e);
-            
-    
-            var popup_fed537e7431e4635bd380e599cee1257 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_7c74724222d948cab6c25e54031f1a24 = $(`<div id="html_7c74724222d948cab6c25e54031f1a24" style="width: 100.0%; height: 100.0%;">Whipporwill Park</div>`)[0];
-                popup_fed537e7431e4635bd380e599cee1257.setContent(html_7c74724222d948cab6c25e54031f1a24);
-            
-
-            marker_bbb3c5d4718a4839b5182e36541c558c.bindPopup(popup_fed537e7431e4635bd380e599cee1257)
-            ;
-
-            
-        
-    
-=======
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-=======
-            }
-        ).addTo(map_000c612029c34c3e9178e7a236cd6694);
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
 
 
 
@@ -1566,49 +691,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_e0ee864cc40a456a84abe8db95091763 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_4e4dfffe2083414190c8bdc7ce15c5c6 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_e0ee864cc40a456a84abe8db95091763.setIcon(icon_4e4dfffe2083414190c8bdc7ce15c5c6);
-            
-    
-            var popup_aba388004c494ced9136d0fb603ba7ac = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_da0d7e5d3520424fa8c954df1786d864 = $(`<div id="html_da0d7e5d3520424fa8c954df1786d864" style="width: 100.0%; height: 100.0%;">East End_1200 N Alston Ave</div>`)[0];
-                popup_aba388004c494ced9136d0fb603ba7ac.setContent(html_da0d7e5d3520424fa8c954df1786d864);
-            
-
-            marker_e0ee864cc40a456a84abe8db95091763.bindPopup(popup_aba388004c494ced9136d0fb603ba7ac)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1639,49 +725,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_b8cd6d44add34d809bd2fac541c67dd8 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_f7c3e451239c44bd9297abe2d61778b0 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_b8cd6d44add34d809bd2fac541c67dd8.setIcon(icon_f7c3e451239c44bd9297abe2d61778b0);
-            
-    
-            var popup_31266dad5e804cc0981cdb6c52ef3c3c = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_86e8ba3f2e4f4352b159daf7c8d714aa = $(`<div id="html_86e8ba3f2e4f4352b159daf7c8d714aa" style="width: 100.0%; height: 100.0%;">Plogging Routes</div>`)[0];
-                popup_31266dad5e804cc0981cdb6c52ef3c3c.setContent(html_86e8ba3f2e4f4352b159daf7c8d714aa);
-            
-
-            marker_b8cd6d44add34d809bd2fac541c67dd8.bindPopup(popup_31266dad5e804cc0981cdb6c52ef3c3c)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1712,49 +759,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_5a8b253f52094d3d8b5055c6ee21ce96 = L.marker(
             [35.9162134, -78.9236838],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_b3fd32e89aa94bdbba9dbcf7d73253ad = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_5a8b253f52094d3d8b5055c6ee21ce96.setIcon(icon_b3fd32e89aa94bdbba9dbcf7d73253ad);
-            
-    
-            var popup_92c4e2fb1adb4fab9ce35cdd7a6d3369 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_e6a2c7ad77fa46c1bc72b853ca867ef7 = $(`<div id="html_e6a2c7ad77fa46c1bc72b853ca867ef7" style="width: 100.0%; height: 100.0%;">Piney Wood Park</div>`)[0];
-                popup_92c4e2fb1adb4fab9ce35cdd7a6d3369.setContent(html_e6a2c7ad77fa46c1bc72b853ca867ef7);
-            
-
-            marker_5a8b253f52094d3d8b5055c6ee21ce96.bindPopup(popup_92c4e2fb1adb4fab9ce35cdd7a6d3369)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1785,49 +793,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_a67e4e73d541446b890c1ed654aaf823 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_139c5848d7f74506942e26eac6b02998 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_a67e4e73d541446b890c1ed654aaf823.setIcon(icon_139c5848d7f74506942e26eac6b02998);
-            
-    
-            var popup_06e92692ced54e86af9900f6d0a486ca = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_6736f4a5f0ae469b88842776a1f4da42 = $(`<div id="html_6736f4a5f0ae469b88842776a1f4da42" style="width: 100.0%; height: 100.0%;">Ellerbe Creek Cleanup</div>`)[0];
-                popup_06e92692ced54e86af9900f6d0a486ca.setContent(html_6736f4a5f0ae469b88842776a1f4da42);
-            
-
-            marker_a67e4e73d541446b890c1ed654aaf823.bindPopup(popup_06e92692ced54e86af9900f6d0a486ca)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1858,49 +827,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_9711d442156042749800077ecc898b5c = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_40635e6f442f402da61fbc22ce4dfd3f = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_9711d442156042749800077ecc898b5c.setIcon(icon_40635e6f442f402da61fbc22ce4dfd3f);
-            
-    
-            var popup_0d79b9e8921a4a409d1dfd7dc7ed9b41 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_fe36deca836640ac930032dc96fd8d95 = $(`<div id="html_fe36deca836640ac930032dc96fd8d95" style="width: 100.0%; height: 100.0%;">Hillside_1301 S. Roxboro St</div>`)[0];
-                popup_0d79b9e8921a4a409d1dfd7dc7ed9b41.setContent(html_fe36deca836640ac930032dc96fd8d95);
-            
-
-            marker_9711d442156042749800077ecc898b5c.bindPopup(popup_0d79b9e8921a4a409d1dfd7dc7ed9b41)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -1931,49 +861,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_d809791ed5244aa1845f02b20c05cc03 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_efd724366e5f4e74ac410d085b194612 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_d809791ed5244aa1845f02b20c05cc03.setIcon(icon_efd724366e5f4e74ac410d085b194612);
-            
-    
-            var popup_fbf8f090b6284875b0c2ca986fed2f5f = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_2678a8f78e0a4e30a4d8da8030c0ae3c = $(`<div id="html_2678a8f78e0a4e30a4d8da8030c0ae3c" style="width: 100.0%; height: 100.0%;">Indian Trail_1701 Albany St</div>`)[0];
-                popup_fbf8f090b6284875b0c2ca986fed2f5f.setContent(html_2678a8f78e0a4e30a4d8da8030c0ae3c);
-            
-
-            marker_d809791ed5244aa1845f02b20c05cc03.bindPopup(popup_fbf8f090b6284875b0c2ca986fed2f5f)
-            ;
-
-            
-        
-    
-=======
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -2004,19 +895,10 @@
 
 
 
-<<<<<<< HEAD
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-=======
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
         var marker_04e89d0db69c4f499f138be896cb7cf6 = L.marker(
             [46.3144754, 11.0480288],
             {
                 icon: new L.Icon.Default(),
-<<<<<<< HEAD
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-=======
             }
         ).addTo(map_000c612029c34c3e9178e7a236cd6694);
 
@@ -2152,275 +1034,3 @@
 
 </body>
 </html>
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
-        
-    
-
-                var icon_45fdc27d6e1c483fb28846eb046ed22e = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_04e89d0db69c4f499f138be896cb7cf6.setIcon(icon_45fdc27d6e1c483fb28846eb046ed22e);
-            
-    
-            var popup_71c0f28eae34486381002b6d1049ba78 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_30f9123efb3d4072a38d45e8cfead408 = $(`<div id="html_30f9123efb3d4072a38d45e8cfead408" style="width: 100.0%; height: 100.0%;">Long Meadow_917 Liberty St</div>`)[0];
-                popup_71c0f28eae34486381002b6d1049ba78.setContent(html_30f9123efb3d4072a38d45e8cfead408);
-            
-
-            marker_04e89d0db69c4f499f138be896cb7cf6.bindPopup(popup_71c0f28eae34486381002b6d1049ba78)
-            ;
-
-            
-        
-    
-=======
-            }
-        ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-
-
-
-        var icon_45fdc27d6e1c483fb28846eb046ed22e = L.AwesomeMarkers.icon({
-            icon: 'info-sign',
-            iconColor: 'white',
-            markerColor: 'blue',
-            prefix: 'glyphicon',
-            extraClasses: 'fa-rotate-0'
-        });
-        marker_04e89d0db69c4f499f138be896cb7cf6.setIcon(icon_45fdc27d6e1c483fb28846eb046ed22e);
-
-
-        var popup_71c0f28eae34486381002b6d1049ba78 = L.popup({maxWidth: '100%'
-
-        });
-
-
-        var html_30f9123efb3d4072a38d45e8cfead408 = $(`<div id="html_30f9123efb3d4072a38d45e8cfead408" style="width: 100.0%; height: 100.0%;">Long Meadow_917 Liberty St</div>`)[0];
-        popup_71c0f28eae34486381002b6d1049ba78.setContent(html_30f9123efb3d4072a38d45e8cfead408);
-
-
-        marker_04e89d0db69c4f499f138be896cb7cf6.bindPopup(popup_71c0f28eae34486381002b6d1049ba78)
-        ;
-
-
-
-
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-        var marker_ce21abf3ba144e31bd759058673d641d = L.marker(
-            [46.3144754, 11.0480288],
-            {
-                icon: new L.Icon.Default(),
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_fd9bc378af5a4917a73489a341f78b39 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_ce21abf3ba144e31bd759058673d641d.setIcon(icon_fd9bc378af5a4917a73489a341f78b39);
-            
-    
-            var popup_30b2ad1fbd6845338a4fd998f69e49c5 = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_cb3c3898402f42c8991ce60aca6869f6 = $(`<div id="html_cb3c3898402f42c8991ce60aca6869f6" style="width: 100.0%; height: 100.0%;">Rock Quarry_701 Stadium Dr</div>`)[0];
-                popup_30b2ad1fbd6845338a4fd998f69e49c5.setContent(html_cb3c3898402f42c8991ce60aca6869f6);
-            
-
-            marker_ce21abf3ba144e31bd759058673d641d.bindPopup(popup_30b2ad1fbd6845338a4fd998f69e49c5)
-            ;
-
-            
-        
-    
-=======
-            }
-        ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-
-
-
-        var icon_fd9bc378af5a4917a73489a341f78b39 = L.AwesomeMarkers.icon({
-            icon: 'info-sign',
-            iconColor: 'white',
-            markerColor: 'blue',
-            prefix: 'glyphicon',
-            extraClasses: 'fa-rotate-0'
-        });
-        marker_ce21abf3ba144e31bd759058673d641d.setIcon(icon_fd9bc378af5a4917a73489a341f78b39);
-
-
-        var popup_30b2ad1fbd6845338a4fd998f69e49c5 = L.popup({maxWidth: '100%'
-
-        });
-
-
-        var html_cb3c3898402f42c8991ce60aca6869f6 = $(`<div id="html_cb3c3898402f42c8991ce60aca6869f6" style="width: 100.0%; height: 100.0%;">Rock Quarry_701 Stadium Dr</div>`)[0];
-        popup_30b2ad1fbd6845338a4fd998f69e49c5.setContent(html_cb3c3898402f42c8991ce60aca6869f6);
-
-
-        marker_ce21abf3ba144e31bd759058673d641d.bindPopup(popup_30b2ad1fbd6845338a4fd998f69e49c5)
-        ;
-
-
-
-
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-        var marker_9c8e80d400d3424083db472894be1a49 = L.marker(
-            [46.3144754, 11.0480288],
-            {
-                icon: new L.Icon.Default(),
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_3eaba3307e654a95990ab15013e9fc8a = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_9c8e80d400d3424083db472894be1a49.setIcon(icon_3eaba3307e654a95990ab15013e9fc8a);
-            
-    
-            var popup_f78071441b1c46d6839b350a8531ddab = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_6ea1c7b2572046fe8b5c56a0bd6a89a6 = $(`<div id="html_6ea1c7b2572046fe8b5c56a0bd6a89a6" style="width: 100.0%; height: 100.0%;">Rockwood_2310 Whitley Dr</div>`)[0];
-                popup_f78071441b1c46d6839b350a8531ddab.setContent(html_6ea1c7b2572046fe8b5c56a0bd6a89a6);
-            
-
-            marker_9c8e80d400d3424083db472894be1a49.bindPopup(popup_f78071441b1c46d6839b350a8531ddab)
-            ;
-
-            
-        
-    
-=======
-            }
-        ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-
-
-
-        var icon_3eaba3307e654a95990ab15013e9fc8a = L.AwesomeMarkers.icon({
-            icon: 'info-sign',
-            iconColor: 'white',
-            markerColor: 'blue',
-            prefix: 'glyphicon',
-            extraClasses: 'fa-rotate-0'
-        });
-        marker_9c8e80d400d3424083db472894be1a49.setIcon(icon_3eaba3307e654a95990ab15013e9fc8a);
-
-
-        var popup_f78071441b1c46d6839b350a8531ddab = L.popup({maxWidth: '100%'
-
-        });
-
-
-        var html_6ea1c7b2572046fe8b5c56a0bd6a89a6 = $(`<div id="html_6ea1c7b2572046fe8b5c56a0bd6a89a6" style="width: 100.0%; height: 100.0%;">Rockwood_2310 Whitley Dr</div>`)[0];
-        popup_f78071441b1c46d6839b350a8531ddab.setContent(html_6ea1c7b2572046fe8b5c56a0bd6a89a6);
-
-
-        marker_9c8e80d400d3424083db472894be1a49.bindPopup(popup_f78071441b1c46d6839b350a8531ddab)
-        ;
-
-
-
-
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-        var marker_de4bc58f686445d698ada8ea8622b3db = L.marker(
-            [35.9962562, -78.9044576],
-            {
-                icon: new L.Icon.Default(),
-<<<<<<< HEAD
-                }
-            ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-        
-    
-
-                var icon_ed97af3bb36c449e868c5132fa52ebc1 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'white',
-                    markerColor: 'blue',
-                    prefix: 'glyphicon',
-                    extraClasses: 'fa-rotate-0'
-                    });
-                marker_de4bc58f686445d698ada8ea8622b3db.setIcon(icon_ed97af3bb36c449e868c5132fa52ebc1);
-            
-    
-            var popup_a17dccb56c9c42d5ba851e92c6e2502a = L.popup({maxWidth: '100%'
-            
-            });
-
-            
-                var html_5696fccc9d4f4ec1beef349f2ef38bd2 = $(`<div id="html_5696fccc9d4f4ec1beef349f2ef38bd2" style="width: 100.0%; height: 100.0%;">Ramseur St</div>`)[0];
-                popup_a17dccb56c9c42d5ba851e92c6e2502a.setContent(html_5696fccc9d4f4ec1beef349f2ef38bd2);
-            
-
-            marker_de4bc58f686445d698ada8ea8622b3db.bindPopup(popup_a17dccb56c9c42d5ba851e92c6e2502a)
-            ;
-
-            
-        
-</script>
-
-</body>
-
-=======
-            }
-        ).addTo(map_000c612029c34c3e9178e7a236cd6694);
-
-
-
-        var icon_ed97af3bb36c449e868c5132fa52ebc1 = L.AwesomeMarkers.icon({
-            icon: 'info-sign',
-            iconColor: 'white',
-            markerColor: 'blue',
-            prefix: 'glyphicon',
-            extraClasses: 'fa-rotate-0'
-        });
-        marker_de4bc58f686445d698ada8ea8622b3db.setIcon(icon_ed97af3bb36c449e868c5132fa52ebc1);
-
-
-        var popup_a17dccb56c9c42d5ba851e92c6e2502a = L.popup({maxWidth: '100%'
-
-        });
-
-
-        var html_5696fccc9d4f4ec1beef349f2ef38bd2 = $(`<div id="html_5696fccc9d4f4ec1beef349f2ef38bd2" style="width: 100.0%; height: 100.0%;">Ramseur St</div>`)[0];
-        popup_a17dccb56c9c42d5ba851e92c6e2502a.setContent(html_5696fccc9d4f4ec1beef349f2ef38bd2);
-
-
-        marker_de4bc58f686445d698ada8ea8622b3db.bindPopup(popup_a17dccb56c9c42d5ba851e92c6e2502a)
-        ;
-
-
-
-    </script>
-
-</body>
->>>>>>> 9484725c47a2fb71624c90b0551344e7fb0b70f2
-<<<<<<< HEAD
-</html>
-=======
-</html>
->>>>>>> 41a66907147abfa2d77f6fb361ab14539c71e960
