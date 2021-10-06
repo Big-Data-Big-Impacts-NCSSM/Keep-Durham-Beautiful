@@ -5,6 +5,9 @@ var fs = require("fs");
 var parse = require("csv-parse");
 const path = require("path");
 
+const cors = require("cors");
+app.use(cors());
+
 app.get("/", (req, res) => {
   res.send("Go to /getHotspots for data.");
 });
