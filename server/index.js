@@ -1,6 +1,37 @@
+const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const express = require("express");
 const app = express();
 const port = 3000;
+
+//Creating the csvWriter
+const csvWriter = createCsvWriter({
+  path: '/litterHotspots.csv',
+  header: [
+    {id: 'Name', title: 'Name'},
+    {id: 'Address', title: 'Address'},
+    {id: 'Map', title: 'Map'},
+    {id: 'Description', title: 'Description'},
+    {id: 'Parking', title: 'Parking'},
+    {id: 'Types of Volunteers', title: 'Types of Volunteers'},
+    {id: 'Group Size', title: 'Group Size'},
+    {id: 'Type of Work', title: 'Type of Work'},
+    {id: 'Season', title: 'Season'},
+    {id: 'Other', title: 'Other'},
+    {id: 'major hotspot?', title: 'major hotspot?'},
+  ]
+});
+
+const data = [
+  {
+
+  }
+];
+
+csvWriter
+  .writeRecords(data)
+
+//Source: https://www.codegrepper.com/code-examples/javascript/Writing+CSV+Files+nodejs
+
 var fs = require("fs");
 var parse = require("csv-parse");
 const path = require("path");
