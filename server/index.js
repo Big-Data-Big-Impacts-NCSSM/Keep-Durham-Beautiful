@@ -3,6 +3,14 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+const {google} = require('googleapis');
+const keys = require('./keys.json');
+
+const client = new google.auth.JWT(
+    keys.client_email, null, key.private_key, ['https://www.googleapis.com/auth/spreadsheets']
+);
+
+
 //Creating the csvWriter
 const csvWriter = createCsvWriter({
   path: '/litterHotspots.csv',
@@ -21,9 +29,24 @@ const csvWriter = createCsvWriter({
   ]
 });
 
+async function gsrun(cl){
+
+    const gsapi = google.sheets({version:'v4', auth: cl});
+
+    const opt = {
+        spreadsheetId: "Add ID here"
+        range: 'Data! (enter range here ex. A2:C6)'
+    }
+
+    let data = await gsapi.spreadsheets.values.get(opt);
+    console.log(data.data.values);
+
+}
+
+//Source: https://www.youtube.com/watch?v=MiPpQzW_ya0
+
 const data = [
   {
-
   }
 ];
 
