@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "keep-durham-beautiful",
+  "private_key_id": "fe5d13267fc76801fefdd8f3eee80864856c886d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCzPQK/C43zZ/kW\nTPoA7M1fGXaa1r7CctR67KxOqzbLIASQo+qnckHhnGHfOoa9zwzmqovU2wY9xjTd\nfNVxa7vHcDoOZjRIVnTgQs+EC5DKMFF1VxOZzpAVcCwJX9/P+O/XqjwbjN99pqU1\nUi6Ia1ZW3kgojcANqguXJsQYV2x9XfYiNqDrGAnuslsroJFt01IyGCCht2WNLp1e\nveYS4b5izRaKAHdSi5eKFX+F/b1W7DHWtLTvmJZXL/VK9FjcqpinzO2bMP1jaDSI\ntCw253LXhi3KJx1I7dXyuLKAU827+CqSYgIdKYd6f3hO+OVvTHXoTXtRoZdkxs4o\nVT7hPthLAgMBAAECggEAEliIU22nVeaqhDHU1Qtn6ff9P9QDKnv+a6aV7Gdx8FCS\npwtgFUuImsMa8XJYIE11EJccQOk6NlB3UMRaRIW2bq96AcdMSqsuw1WTT/yvEULo\n043aH8AY11jn6P27NtpQEk8GX/uHVKEd/9stkCEMcU/HKv93TO6+yPXa1HL+U8aC\nP4LAbx01MtHiUlExq11F5A42H6Fiw1PUkwKRKKlYZ6ttlMFIHhV7kX2GRLRSePPb\nAL47UNx8AEQnOpWkzMZAnIMQjldpIaMw3WreK5R2xG/5xGpf7trxk9v5ujkzKy3f\nQGcXUG3wcYQbgmZM4FyeThYhcgseNf6n8nsH+D0RYQKBgQDsMUtJNswtuDtFQAkh\nC54iab27XjzNUn4c9vH5aa8JAgJQ7fRmNM+0rhE1brg7fwKm8leuhMtlIOByETXn\nL3TNtIyu65Fu0Ia7dTIZEdoRef/jBYhf9OyonnVXAt4EKcXOWHIHi0aV4Ap0jJxl\ndnRW9FOg+lkFWfRDHlx/BcatxQKBgQDCRP5GE/KLw2ZAC4O/SMFGUxx82sb7lFnM\nUYq8JYPhJqMv2XUPJ+aQ7HYtnL6XxuD+4sori+9ajXhKVX5aYYe2/+7+D1ab0Ipd\nbDXDhNFzWBO3v2yn6OJ6KNmpG1hFqfiQf+p+exfhmHOaBvyCKQaUFnWFJ1QplbQ+\nXQ3f8UJezwKBgBUZ5k75LU6cWfc63FXucsdCSSgXKDlzuD6gNUgCEBgu7MQMLjx/\nVVsf/fuXE7CFDVia6Ah4Zq93O3YVYYpw6++AxNzPwON0j8TpmHsy5BeRnbHLib6A\n5C/AUF1grTMUBE8GCdHwuHKlXGnDMinCZmxqUZpdI1zeB3uDl+HlQzW9AoGAISS+\nMNyEW93pWvHb902FU+coDBETM6a6r0YWIkVQO6Bo5Of3ta88AeulueBtD93pUvME\nROup2UwbgqsVVHwhOFJvxr59KzYn9QpaHdJSHZigPJAXDIqJ4QeJIvW8WJ5H/vcj\n3ZJIn79vsY6Rk+9F5Qvz3tS34iRdTOp5TISPqzcCgYAxj7RDY/GTKPwDBw9Gk7T8\n2BtZWhWgkAB/7oev5yrKjb4Qy+EjXQW+J8HGJix3pKKHer7d/KnMHJgv/W35wgq2\nUqnB+bjxdbRzL013Pi/p93TLpJDTGj8n4ITpJHIzVc+5qIm4MdGmbHza+aO5Y6j0\np0rrKhfzgEGftzYckmkATA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "keepdurhambeautiful@keep-durham-beautiful.iam.gserviceaccount.com",
+  "client_id": "109258803843252206209",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/keepdurhambeautiful%40keep-durham-beautiful.iam.gserviceaccount.com"
+}
