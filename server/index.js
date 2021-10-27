@@ -33,8 +33,8 @@ async function gsrun(cl) {
   const gsapi = google.sheets({ version: "v4", auth: cl });
 
   const opt = {
-    spreadsheetId: "Add ID here",
-    range: "Data! (enter range here ex. A2:C6)",
+    spreadsheetId: "15qcutdaPmh7UeTs58GV7YtYhXj3_HPv4uXG7hF2BGQY",
+    range: "A1:K35",
   };
 
   let data = await gsapi.spreadsheets.values.get(opt);
